@@ -310,7 +310,8 @@
 <!-- What's with the extra class here? Check out documentation. -->
 <!-- 					<li class="pure-menu-item" class="menu-item-divided pure-menu-selected"> -->
 <!-- 						<a href="#" class="pure-menu-link">Services</a> -->
-					</li>
+<!-- 					</li> -->
+					<li class="pure-menu-item"><a href="#" class="pure-menu-link">Use</a></li>
 					<li class="pure-menu-item"><a href="#" class="pure-menu-link">Today</a></li>
 					<li class="pure-menu-item"><a href="#" class="pure-menu-link">References</a></li>
 				</ul>
@@ -473,12 +474,38 @@
 					solutions into a single element.
 				</p>
 				
-				<h2>Using &lt;span&gt;</h2>
+				<h2 class="content-subhead">Using &lt;span&gt;</h2>
 				<p>
-				The correct guidelines for using &lt;span&gt; today can be found in the <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-span-element">WHATWG HTML Living Standard.</a>
-				In some of its online articles, <i>The Atlantic</i> is an example of the approved use of &lt;span&gt;. Indeed, <i>The Atlantic</i> uses 
-				&lt;span&gt; essentially as Hopmann and Sittler intended: to apply style to a small section of text.
+					The correct guidelines for using &lt;span&gt; today can be found in the <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-span-element">WHATWG HTML Living Standard.</a>
+					In some of its online articles, <i>The Atlantic</i> is an example of the approved use of &lt;span&gt;. Indeed, <i>The Atlantic</i> uses 
+					&lt;span&gt; essentially as Hopmann and Sittler intended: to apply style to a small section of text.
 				</p>
+				
+<!-- Figure out external image embed rules for Pure	 -->
+				
+				<blockquote class="imgur-embed-pub" lang="en" data-id="ema8Ith"><a href="//imgur.com/ema8Ith"><i>The Atlantic</i>'s article 'The Coddling of the American Mind</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+				
+				<p>
+					In this article, <i>The Atlantic</i> has used &lt;span&gt; to style the first letter of the article in a different font 
+					and the first two words in small caps.
+				</p>
+				
+				<blockquote class="imgur-embed-pub" lang="en" data-id="54ofT8i"><a href="//imgur.com/54ofT8i"><i>The Atlantic</i>'s &lt;span&gt; code.</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+				
+				<p>
+					However, &lt;span&gt; can also produce unexpected results. For example, when copying and pasting text from a webpage or document 
+					with added formatting, the style of the original document may be copied alongside the text. In some cases, this is the result of 
+					&lt;span&gt;.
+				</p>
+				
+<!-- Insert image from work (loose spans with style attributes)-->
+				
+				<p>
+					To prevent this transfer of styling, users have the option to Paste as Plain Text, which should remove any &lt;span&gt; tags with 
+					additional styling.
+				</p>
+
+<!-- I'm considering additional examples of span use, especially non-standard uses from developers. -->
 
 				<h2 class="content-subhead">&lt;span&gt; today</h2>
 				<p>
@@ -495,7 +522,7 @@
 				</p>
 				<blockquote cite"">
 					You will certainly use &lt;div&gt; less often in HTML5 than you did in HTML 4, but it’s still a valuable element to have in your toolkit. Sure, it’ll be picked last for the team because everyone else is better, but it’ll be the best damn generic container element there is!
-				<blockquote>
+				</blockquote>
 				<p>
 					Unless something radically changes the development of HTML, &lt;span&gt; will never disappear entirely. Instead, this 
 					handy element will help web developers write semantically correct code, and help the HTML development community 
@@ -503,7 +530,7 @@
 				</p>
 				<h2 class="content-subhead">References</h2>
 				<p>
-					WIP. See code for cite elements.
+					WIP. See code for cite elements and other comments.
 				</p>
 			</div>
 		</div>
