@@ -305,14 +305,14 @@
 				<a class="pure-menu-heading" href="#">SPAN</a>
 
 				<ul class="pure-menu-list">
-					<li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
-					<li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
-
-					<li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
-						<a href="#" class="pure-menu-link">Services</a>
+					<li class="pure-menu-item"><a href="#" class="pure-menu-link">&lt;span&gt; what?</a></li>
+					<li class="pure-menu-item"><a href="#" class="pure-menu-link">Development</a></li>
+<!-- What's with the extra class here? Check out documentation. -->
+<!-- 					<li class="pure-menu-item" class="menu-item-divided pure-menu-selected"> -->
+<!-- 						<a href="#" class="pure-menu-link">Services</a> -->
 					</li>
-
-					<li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+					<li class="pure-menu-item"><a href="#" class="pure-menu-link">Today</a></li>
+					<li class="pure-menu-item"><a href="#" class="pure-menu-link">References</a></li>
 				</ul>
 			</div>
 		</div>
@@ -324,12 +324,97 @@
 			</div>
 
 			<div class="content">
-				<h2 class="content-subhead">How to use this layout</h2>
 				<p>
-					To use this layout, you can just copy paste the HTML, along with the CSS in <a href="/css/layouts/side-menu.css" alt="Side Menu CSS">side-menu.css</a>, and the JavaScript in <a href="/js/ui.js">ui.js</a>. The JS file uses vanilla JavaScript to simply toggle an <code>active</code> class that makes the menu responsive.
+					Today’s web design seems to change at a moment’s notice. Suddenly, one-page websites <a href="https://wordpress.com/">are</a> <a href="http://everylastdrop.co.uk/">in</a>, and <a href="http://new.artsmia.org/">every</a> <a href="http://www.oakley.com/">other</a> <a href="https://webflow.com/">organization</a> has a widescreen image taking up prime homepage real estate. Behind the scenes, in the murky world of web standards and development, the building blocks of the internet are slowly changing, too. In 2014, the governing body of HTML, the internet’s primary coding language, officially released the fifth version of its language: HTML5. The last major HTML release, HTML 4.0, was introduced seventeen years earlier, and HTML5’s introduction brought in long-awaited tools for developers to use, and new and more refined ways to manipulate content made for the web.
+				</p>
+				<p>
+					But among the glamour shots of new HTML5 features, a member of the old guard still stands strong: &lt;span&gt;. In the evolving technology of HTML, &lt;span&gt; is the ancestor of many now-standard HTML elements, the transitional step between future elements and their conception, and the back-up when simply nothing else will do.
+				</p>
+				
+				
+				<h2 class="content-subhead">&lt;span&gt; what?</h2>
+				<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span">
+					"The HTML <dfn>&lt;span&gt;</dfn> element is a generic inline container for phrasing content, which does not inherently represent anything."<br>–The Mozilla Developer Network
+				</blockquote>
+				<p></p>
+				<p>
+					To talk about &lt;span&gt;, we must first discuss &lt;span&gt;'s mother language, HTML (Hypertext Markup Language).
+				</p>
+				<p>
+					HTML is a markup language, which means that code written in HTML describes (or marks) its contents. 
+					This description can say something about the code's contents or it can change how its contents are displayed. 
+					HTML code is written inside brackets, as seen in the example below.
 				</p>
 
-				<h2 class="content-subhead">Now Let's Speak Some Latin</h2>
+				<!-- Blockquote is semantically incorrect, use different element to style following. Check pure doc. -->
+
+				<blockquote><i>
+					&lt;p&gt;The bracketed "p" means this text is a paragraph. The paragraph begins with an opening <em>tag</em> (&lt;p&gt;) 
+					that notes the start of the paragraph and ends with a closing tag (&lt;/p&gt;) that notes the end of the paragraph. 
+					Everything contained by the two tags is considered part of an HTML <em>element</em>. In this case, the tags and their 
+					contents make up a paragraph element.&lt;/p&gt;
+				</i></blockquote>
+
+				<p>
+					Like the &lt;p&gt; element, &lt;span&gt; is a container. However, that's where most similarities end. The &lt;p&gt; element is
+					what's known as a semantic element, or an element that <q cite"http://learn.shayhowe.com/html-css/getting-to-know-html/">describes
+					 the value of content on a page, regardless of the style or appearance of that content.</q> The &lt;p&gt; element tells 
+					us that the text it contains is a paragraph. The &lt;span&gt; element, in comparison, doesn't tell us anything about the meaning 
+					of its contents; it just groups the contained text together. For this reason, &lt;span&gt; doesn't have semantic value.
+				</p>
+
+				<p>
+					&lt;p&gt; and &lt;span&gt; have another difference: scope. &lt;p&gt; is a block-level element. Block-level elements begin 
+					on a new line and generally identify larger blocks of content, like the paragraph made up of individual sentences in the 
+					above example. Block-level elements with different semantic meanings could also be used to group multiple paragraphs together 
+					or contain an image and its caption. &lt;span&gt;, however, is an inline element. &lt;span&gt; and other inline elements would 
+					be used to contain just a piece of the larger block of content, like a word or sentence within a paragraph. This grouping of 
+					inline content is known as <dfn>phrasing</dfn>. Block-level elements can contain inline elements as well as other block elements, 
+					but inline elements can only contain other inline elements. The block-level equivalent to &lt;span&gt; is &lt;div&gt;, the generic
+					 block-level container without semantic value.
+				</p>
+
+				<h2 class="content-subhead">The development of &lt;span&gt;</h2>
+				<p>
+					HTML was developed through the combined efforts of HTML's governing body, the World Wide Web Consortium (W3C), and W3C's subject-specific working groups, made up of W3C members and invited subject-matter experts.
+				</p>
+				<!-- Was this "invitation" always necessary to participate, even in the early/mid 90s? W3C website unclear. -->
+				<p>
+					The element &lt;span&gt; was developed as a response to two problems identified by the working group community: 
+					HTML's lack of a generic inline container, and HTML's inability to properly render languages read right-to-left. 
+					However, these two problems were originally identified and solved separately, and only later were the solutions 
+					consolidated into the &lt;span&gt; element we see today. Both of these issues, identified in
+					working group listservs, stem from the constraints of the HTML medium compared to previous technologies, 
+					especially print technologies. The unique social and political flavor of HTML working groups also influenced the 
+					development of the &lt;span&gt; element, particularly its consolidation into a single solution for two separately 
+					discussed issues.
+				</p>
+				<h3>The missing container</h3>
+				<p>
+					The generic block-level &lt;div&gt; container was introduced in the HTML 3.0 proposal in March of 1995. The introduction of 
+					this novel generic container set the stage for an inline equivalent. In 
+					<cite="http://ksi.cpsc.ucalgary.ca/archives/HTML-WG/html-wg-95q2.messages/0508.html">May of 1995</cite>, Alex Hopmann, founder 
+					of a software company later acquired by Microsoft, mentioned in a reply to the HTML Working 
+					Group listserv that he was working on a proposal for character-level—also known as inline—formatting. In this proposal, Hopmann 
+					outlined the need for a character-level container that could be used to apply text styles at the character level, instead of by 
+					sections, as seen with &lt;div&gt;. Hopmann called this character-level container &lt;C&gt;. At this time, some specific inline elements for common text styles had already been introduced. 
+					Text stylings such as bold or italicized text, common in print media, warranted their own elements that easily applied this 
+					styling to inline. However, unique text styling at the character level required more acrobatics. A generic inline container like 
+					Hopmann's proposed &lt;C&gt; would allow authors to easily add unique styling to words, phrases, and sentences.
+				</p>
+				<p>
+					Hopmann was not the only working group member to propose a generic inline container. On July 3, 1995, Benjamin C.W. Sittler 
+					proposed the &lt;TEXT&gt; element to the www-style working group. Like Hopmann, Sittler considered a generic character-level element
+					<q cite="http://lists.w3.org/Archives/Public/www-style/1995Jul/0003.html">extremely useful for applying styles to certain blocks of text.</q>
+					The first person to respond was Håkon Wium Lie...the man who <cite="http://www.w3.org/People/howcome/p/cascade.html">first proposed 
+					Cascading Style Sheets (CSS) the year before.</cite> Lie called the proposed generic inline container 
+					<q cite="http://lists.w3.org/Archives/Public/www-style/1995Jul/0009.html">very useful indeed,</q> and said he would talk with 
+					Dave Raggett, another major player in W3C, about the idea. Hopmann quickly jumped into the discussion, noting to the working group 
+					that his element, &lt;C&gt;, had been proposed first.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
@@ -353,6 +438,11 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
+				
+				<h2 class="content-subhead">References</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
 			</div>
 		</div>
 	</div>
@@ -363,7 +453,7 @@
 	<!-- It shouldn't work (because it's a relative URL), but good example. Also interesting it's at the bottom/loaded last. -->
 	<!-- <script src="/combo/1.18.13?/js/ui.js"></script> -->
 	
-	<!-- Internal Javascript for mobile menu (not working?) -->
+	<!-- Internal Javascript for mobile menu (working?) -->
 
 	<script>
 		(function (window, document) {
