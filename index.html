@@ -6,7 +6,7 @@
 	<meta name="description" content="A discussion of the historical, social, and cultural context surrounding the development of the HTML element &lt;span&gt;.">
 	<meta http-equiv="author" content="J. LaLiberte">
 	<meta name="keywords" content="HTML, historicizing, span, development">
-	<meta name="robots" content="noindex">
+	<meta name="robots" content="noindex, nofollow">
 	
     <title>Historicizing &lt;span&gt;</title>
     
@@ -79,8 +79,8 @@
 				
 				
 				<h2 class="content-subhead" id="what">&lt;span&gt; what?</h2>
-				<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span">
-					"The HTML <dfn>&lt;span&gt;</dfn> element is a generic inline container for phrasing content, which does not inherently represent anything."<br>–The Mozilla Developer Network
+				<blockquote>
+					The HTML <dfn>&lt;span&gt;</dfn> element is a generic inline container for phrasing content, which does not inherently represent anything.<br><cite><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span">The Mozilla Developer Network</a></cite>
 				</blockquote>
 				<p></p>
 				<p>
@@ -90,11 +90,9 @@
 					HTML is a markup language, which means that code written in HTML describes (or marks) its contents. This description can say something about the code's contents or it can change how its contents are displayed. HTML code is written inside brackets, as seen in the example below.
 				</p>
 
-<!-- Blockquote is semantically incorrect, use different element to style following. Check pure doc. -->
+<!-- Changed from blockquote to pre/code based on stackoverflow discussion http://stackoverflow.com/questions/4611591/code-vs-pre-vs-samp-for-inline-and-block-code-snippets -->
 
-				<blockquote><i>
-					&lt;p&gt;The bracketed "p" means this text is a paragraph. The paragraph begins with an opening <em>tag</em> (&lt;p&gt;) that notes the start of the paragraph and ends with a closing tag (&lt;/p&gt;) that notes the end of the paragraph. Everything contained by the two tags is considered part of an HTML <em>element</em>. In this case, the tags and their contents make up a paragraph element.&lt;/p&gt;
-				</i></blockquote>
+				<pre><code>&lt;p&gt;The bracketed "p" means this text is a paragraph. The paragraph begins with an opening <em>tag</em> (&lt;p&gt;) that notes the start of the paragraph and ends with a closing tag (&lt;/p&gt;) that notes the end of the paragraph. Everything contained by the two tags is considered part of an HTML <em>element</em>. In this case, the tags and their contents make up a paragraph element.&lt;/p&gt;</code></pre>
 
 				<p>
 					Like the &lt;p&gt; element, &lt;span&gt; is a container. However, that's where most similarities end. The &lt;p&gt; element is what's known as a semantic element, or an element that <q cite"http://learn.shayhowe.com/html-css/getting-to-know-html/">describes the value of content on a page, regardless of the style or appearance of that content.</q> The &lt;p&gt; element tells us that the text it contains is a paragraph. The &lt;span&gt; element, in comparison, doesn't tell us anything about the meaning of its contents; it just groups the contained text together. For this reason, &lt;span&gt; doesn't have semantic value.
@@ -120,7 +118,7 @@
 					Hopmann was not the only working group member to propose a generic inline container. On July 3, 1995, Benjamin C.W. Sittler proposed the &lt;TEXT&gt; element to the www-style working group. Like Hopmann, Sittler considered a generic character-level element <q cite="http://lists.w3.org/Archives/Public/www-style/1995Jul/0003.html">extremely useful for applying styles to certain blocks of text.</q> The first person to respond was Håkon Wium Lie...the man who <cite="http://www.w3.org/People/howcome/p/cascade.html">first proposed Cascading Style Sheets (CSS) the year before.</cite> Lie called the proposed generic inline container <q cite="http://lists.w3.org/Archives/Public/www-style/1995Jul/0009.html">very useful indeed,</q> and said he would talk with Dave Raggett, another major player in W3C, about the idea. Hopmann quickly jumped into the discussion, noting to the working group that his element, &lt;C&gt;, had been proposed first.
 				</p>
 				<p>
-					The replies to Sittler and Hopmann's exchange reflect an awareness of the end user, particularly this user's interpretation of an element titled &lt;TEXT&gt; compared to an element titled &lt;C&gt; &lt;FONT&gt;, or &lt;MARK&gt;. The considerations of the end user also sparked a reflection on the desired relationship between semantics and presentation. However, each new entrant to the conversation seemed insistent on tossing another potential name into the hat—or dismissing the idea of semantically neutral elements entirely. Paul Prescod scoffed at the wisdom of equipping users with neutral tags so, <q cite="">incredibly, horrifically easy to abuse when you dont' [sic] feel like looking up a tag in the HTML Spec.</q> Prescod's concerns were rebutted by Michal Young, who argued:
+					The replies to Sittler and Hopmann's exchange reflect an awareness of the end user, particularly this user's interpretation of an element titled &lt;TEXT&gt; compared to an element titled &lt;C&gt;, &lt;FONT&gt;, or &lt;MARK&gt;. The considerations of the end user also sparked a reflection on the desired relationship between semantics and presentation. However, each new entrant to the conversation seemed insistent on tossing another potential name into the hat—or dismissing the idea of semantically neutral elements entirely. Paul Prescod scoffed at the wisdom of equipping users with neutral tags so, <q cite="">incredibly, horrifically easy to abuse when you dont' [sic] feel like looking up a tag in the HTML Spec.</q> Prescod's concerns were rebutted by Michal Young, who argued:
 				</p>
 
 				<blockquote cite="https://lists.w3.org/Archives/Public/www-style/1995Jul/0018.html">

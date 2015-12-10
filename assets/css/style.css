@@ -3,10 +3,64 @@
 		body {
 			color: #777;
 		}
+		
+		a:link {
+			color: #ff7f00;
+		}
+		
+		a:visited {
+			color: #1F8DD6;
+		}
+		
+		/* Quote styling based off of http://www.webmaster-source.com/2012/04/24/pure-css-blockquote-styling/ */
+		
+		blockquote {
+			font-size: 18px;
+			font-style: italic;
+			overflow: auto
+			width: 500px;
+			margin: 0.25em 0;
+			padding: 0.25em 40px;
+			line-height: 1.45;
+			position: relative;
+			color: #595959;
+		}
+
+		blockquote:before {
+			display: block;
+			content: "\201C";
+			font-size: 80px;
+			position: absolute;
+			left: -20px;
+			top: -20px;
+			color: #7a7a7a;
+		}
+
+		blockquote cite {
+			font-size: .85em;
+			font-style: normal;
+			display: block;
+			margin-top: 5px;
+			}
+ 
+			blockquote cite:before {
+			content: "\2014 \2009";
+		}
 
 		.pure-img-responsive {
 			max-width: 100%;
 			height: auto;
+		}
+
+		/*
+		For code block (from stackoverflow discussion) http://stackoverflow.com/a/8306643
+		*/
+
+		pre {
+			white-space: pre-wrap;
+			background: #d2e9f9;
+			font-size:.85em;
+			color: #595959
 		}
 
 		/*
