@@ -51,6 +51,7 @@
 				<a class="pure-menu-heading" href="#">SPAN</a>
 
 				<ul class="pure-menu-list">
+					<li class="pure-menu-item"><a href="#perspective" class="pure-menu-link">Perspective</a></li>
 					<li class="pure-menu-item"><a href="#what" class="pure-menu-link">&lt;span&gt; what?</a></li>
 					<li class="pure-menu-item"><a href="#development" class="pure-menu-link">Development</a></li>
 <!-- What's with the extra class here? Check out documentation. -->
@@ -74,19 +75,34 @@
 				<p>
 					Today’s web design seems to change at a moment’s notice. Suddenly, one-page websites <a href="https://wordpress.com/" target="_blank">are</a> <a href="http://everylastdrop.co.uk/" target="_blank">in</a>, and <a href="http://new.artsmia.org/" target="_blank">every</a> <a href="http://www.oakley.com/" target="_blank">other</a> <a href="https://webflow.com/" target="_blank">organization</a> has a widescreen image taking up prime homepage real estate. Behind the scenes, in the murky world of web standards and development, the building blocks of the internet are slowly changing, too. In 2014, the governing body of HTML, the internet’s primary coding language, officially released the fifth version of its language: HTML5. The last major HTML release, HTML 4.0, was introduced seventeen years earlier, and HTML5’s introduction brought in long-awaited tools for developers to use, and new and more refined ways to manipulate content made for the web.
 				</p>
-<!-- Is the HTML 4.01 release considered "significant"? I wasn't sure how much was added in it. Fact check! -->
 				<p>
-					But among the glamour shots of new HTML5 features, a member of the old guard still stands strong: &lt;span&gt;. In the evolving technology of HTML, &lt;span&gt; is the ancestor of many now-standard HTML elements, the transitional step between future elements and their conception, and the back-up when simply nothing else will do.
+					But among the glamour shots of new HTML5 features, a member of the old guard still stands strong: &lt;span&gt;. The HTML development community's decision to create &lt;span&gt; shaped the future of the HTML language in no one simple way.In the evolving technology of HTML, &lt;span&gt; is the ancestor of many now-standard HTML elements, the transitional step between future elements and their conception, and the back-up when simply nothing else will do.
 				</p>
 				
+				<h2 class="content-subhead" id="perspective">Some perspective</h2>
+				<p>
+					This analysis builds on the theoretical framework discussed by Christina Haas in <cite>On the Relationship Between Old and New Technologies.</cite> Haas’ work, in the above paper and elsewhere, studies writing technologies. Central to her arguments is the idea that, if we are to, <q>construct an historically sensitive, empirically driven theoretical account of literacy technologies,</q> (that is, “historicize” a technology) we must first rethink the relationship between old and new technology.
+				</p>
+				<p>
+					Haas explains that technological evolution is never a straightforward process—there is no simple replacement model, where new technology simply replaces prior technology. Haas also refutes a model of straightforward progress, where new means better, and new technologies are obvious improvements in quality, efficiency, and power.
+				</p>
+				<p>
+					The true relationship between new and old technology is much more complicated. Haas constructs this relationship using a number of concepts from the Soviet semiotician Lev Vygotsky and the Dutch philosopher Wiebe Bijker. In my analysis of &lt;span&gt;, I will focus on Haas’ interpretation of Vygotsky’s <i>historical genetic method</i> and Bijker’s concept of the <i>non-linearity of technological development.</i>
+				</p>
+				<p>
+					In Haas’ hands, Vygotsky's historical genetic method specifies that, <q>[u]nderstanding twentieth-century literacy means understanding the multiple technologies that support it, have supported it, and continue to support it.</q> In this context, to fully understand what the HTML element &lt;span&gt; is and what it does, we must also discuss where this element came from and how it came to be. This understanding in turn allows us to better understand literacy today, particularly literacy in the web environment.
+				</p>
+				<p>
+					Haas’ wielding of the non-linearity of technological development readily fuses with the necessity of history. Essentially, Bijker’s theory argues that, <q>technological development…cannot be properly understood in hindsight.</q> Like the evolution of a species, technological evolution has its fair share of fits and starts—multiple, rival technologies can and do exist, and there is no single, unbroken line between a technology’s origin and present. Only by recognizing this complexity can we begin to understand a technology today. For &lt;span&gt;, this requires understanding the multiple paths that led to the development of a generic inline container.
+				</p>
 				
 				<h2 class="content-subhead" id="what">&lt;span&gt; what?</h2>
 				<blockquote>
 					The HTML <dfn>&lt;span&gt;</dfn> element is a generic inline container for phrasing content, which does not inherently represent anything.<br><cite><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span" target="_blank">The Mozilla Developer Network</a></cite>
 				</blockquote>
-				<p></p>
+
 				<p>
-					To talk about &lt;span&gt;, we must first discuss &lt;span&gt;'s mother language, HTML (Hypertext Markup Language).
+					Thanks to Vygotsky, to talk about &lt;span&gt;, we must first discuss &lt;span&gt;'s mother language, HTML (Hypertext Markup Language).
 				</p>
 				<p>
 					HTML is a markup language, which means that code written in HTML describes (or marks) its contents. This description can say something about the code's contents or it can change how its contents are displayed. HTML code is written inside brackets, as seen in the example below.
@@ -110,17 +126,20 @@
 				</p>
 				<!-- Was this "invitation" always necessary to participate, even in the early/mid 90s? W3C website unclear. -->
 				<p>
-					The element &lt;span&gt; was developed as a response to two problems identified by the working group community: HTML's lack of a generic inline container, and HTML's inability to properly render languages read right-to-left. However, these two problems were originally identified and solved separately, and only later were the solutions consolidated into the &lt;span&gt; element we see today. Both of these issues, identified in working group listservs, stem from the constraints of the HTML medium compared to previous technologies, especially print technologies. The unique social and political flavor of HTML working groups also influenced the development of the &lt;span&gt; element, particularly its consolidation into a single solution for two separately discussed issues.
+					The element &lt;span&gt; was developed as a response to two problems identified by the working group community: HTML's lack of a generic inline container for encouraging text styling, and HTML's inability to properly render languages read right-to-left. Considering Bijker's theory of non-linear technological development, it is fitting that these two problems were originally identified and solved separately. Only later were the solutions consolidated into the &lt;span&gt; element we see today.
+				</p>
+				<p>
+					The unique cultural flavor of HTML working groups in 1995, at that point still in their infancy, also influenced the development of the &lt;span&gt; element, particularly its consolidation into a single solution for two separately discussed issues.
 				</p>
 				<h3>The missing container</h3>
 				<p>
-					The generic block-level &lt;div&gt; container was introduced in the HTML 3.0 proposal in March of 1995. The introduction of this novel generic container set the stage for an inline equivalent. In May of 1995, Alex Hopmann, founder of a software company later acquired by Microsoft, mentioned in <cite><a href="http://ksi.cpsc.ucalgary.ca/archives/HTML-WG/html-wg-95q2.messages/0508.html" target="_blank">a reply</a></cite> to the HTML Working Group listserv that he was working on a proposal for character-level—also known as inline—formatting. In this proposal, Hopmann outlined the need for a character-level container that could be used to apply text styles at the character level, instead of by sections, as seen with &lt;div&gt;. Hopmann called this character-level container &lt;C&gt;. At this time, some specific inline elements for common text styles had already been introduced. Text stylings such as bold or italicized text, common in print media, warranted their own elements that easily applied this styling to inline. However, unique text styling at the character level required more acrobatics. A generic inline container like Hopmann's proposed &lt;C&gt; would allow authors to easily add unique styling to words, phrases, and sentences.
+					The generic block-level &lt;div&gt; container was introduced in the HTML 3.0 proposal in March of 1995. The introduction of this novel generic container set the stage for an inline equivalent. In May of 1995, Alex Hopmann, founder of a software company later acquired by Microsoft, mentioned in <cite><a href="http://ksi.cpsc.ucalgary.ca/archives/HTML-WG/html-wg-95q2.messages/0508.html" target="_blank">a reply</a></cite> to the HTML Working Group listserv that he was working on a proposal for character-level—also known as inline—formatting. In this proposal, Hopmann outlined the need for a character-level container that could be used to apply text styles at the character level, instead of by sections, as seen with &lt;div&gt;. Hopmann called this character-level container &lt;c&gt;. At this time, some specific inline elements for common text styles had already been introduced. Text stylings such as bold or italicized text, common in print media, warranted their own elements that easily applied this styling to inline. However, unique text styling at the character level required more acrobatics. A generic inline container like Hopmann's proposed &lt;c&gt; would allow authors to easily add unique styling to words, phrases, and sentences.
 				</p>
 				<p>
-					Hopmann was not the only working group member to propose a generic inline container. On July 3, 1995, Benjamin C.W. Sittler proposed the &lt;TEXT&gt; element to the www-style working group. Like Hopmann, Sittler considered a generic character-level element <q cite="http://lists.w3.org/Archives/Public/www-style/1995Jul/0003.html">extremely useful for applying styles to certain blocks of text.</q> The first person to respond was Håkon Wium Lie...the man who <cite><a href="http://www.w3.org/People/howcome/p/cascade.html" target="_blank">first proposed Cascading Style Sheets (CSS)</a> the year before.</cite> Lie called the proposed generic inline container <q cite="http://lists.w3.org/Archives/Public/www-style/1995Jul/0009.html">very useful indeed,</q> and said he would talk with Dave Raggett, another major player in W3C, about the idea. Hopmann quickly jumped into the discussion, noting to the working group that his element, &lt;C&gt;, had been proposed first.
+					Hopmann was not the only working group member to propose a generic inline container. On July 3, 1995, Benjamin C.W. Sittler proposed the &lt;text&gt; element to the www-style working group. Like Hopmann, Sittler considered a generic character-level element <q cite="http://lists.w3.org/Archives/Public/www-style/1995Jul/0003.html">extremely useful for applying styles to certain blocks of text.</q> The first person to respond was Håkon Wium Lie...the man who <cite><a href="http://www.w3.org/People/howcome/p/cascade.html" target="_blank">first proposed Cascading Style Sheets (CSS)</a> the year before.</cite> Lie called the proposed generic inline container <q cite="http://lists.w3.org/Archives/Public/www-style/1995Jul/0009.html">very useful indeed,</q> and said he would talk with Dave Raggett, another major player in W3C, about the idea. Hopmann quickly jumped into the discussion, noting to the working group that his element, &lt;c&gt;, had been proposed first.
 				</p>
 				<p>
-					The replies to Sittler and Hopmann's exchange reflect an awareness of the end user, particularly this user's interpretation of an element titled &lt;TEXT&gt; compared to an element titled &lt;C&gt;, &lt;FONT&gt;, or &lt;MARK&gt;. The considerations of the end user also sparked a reflection on the desired relationship between semantics and presentation. However, each new entrant to the conversation seemed insistent on tossing another potential name into the hat—or dismissing the idea of semantically neutral elements entirely. Paul Prescod scoffed at the wisdom of equipping users with neutral tags so, <q cite="https://lists.w3.org/Archives/Public/www-style/1995Jul/0014.html">incredibly, horrifically easy to abuse when you dont' [sic] feel like looking up a tag in the HTML Spec.</q> Prescod's concerns were rebutted by Michal Young, who argued:
+					The replies to Sittler and Hopmann's exchange reflect an awareness of the end user, particularly this user's interpretation of an element titled &lt;text&gt; compared to an element titled &lt;c&gt;, &lt;font&gt;, or &lt;mark&gt;. The considerations of the end user also sparked a reflection on the desired relationship between semantics and presentation. However, each new entrant to the conversation seemed insistent on tossing another potential name into the hat—or dismissing the idea of semantically neutral elements entirely. Paul Prescod scoffed at the wisdom of equipping users with neutral tags so, <q cite="https://lists.w3.org/Archives/Public/www-style/1995Jul/0014.html">incredibly, horrifically easy to abuse when you dont' [sic] feel like looking up a tag in the HTML Spec.</q> Prescod's concerns were rebutted by Michal Young, who argued:
 				</p>
 
 				<blockquote>
@@ -130,18 +149,18 @@
 					Michal sees two steps to separating presentation from semantics: making stylesheets powerful enough to create results too complex to mimic using improper HTML, and making these same stylesheets so easy to use that people aren't tempted to misuse HTML instead.
 				</p>
 				<p>
-					After much conversation and little consensus, the reaction to Sittler's email petered out. Despite the disagreements in response to Sittler and Hopmann's proposals, the &lt;C&gt; element came out on top in the short term. &lt;C&gt; was added to the <cite>first draft of <i>HTML and Style Sheets</i></cite> (<a href="http://tools.ietf.org/html/draft-ietf-html-style-00" target="_blank">November 1995</a>) as the new generic inline container. But &lt;C&gt; wasn't around for long...
+					After much conversation and little consensus, the reaction to Sittler's email petered out. Despite the disagreements in response to Sittler and Hopmann's proposals, the &lt;c&gt; element came out on top in the short term. &lt;c&gt; was added to the <cite>first draft of <i>HTML and Style Sheets</i></cite> (<a href="http://tools.ietf.org/html/draft-ietf-html-style-00" target="_blank">November 1995</a>) as the new generic inline container. But &lt;c&gt; wasn't around for long...
 				</p>
 				<h3>Internationalization</h3>
 				<p>
-					While the www-style listserv discussed naming conventions and semantics, a different development in HTML was in the works. Because HTML was largely developed by speakers of English or other languages read left-to-right, writing right-to-left languages in HTML was tricky, especially if this right-to-left language appeared on the same page as left-to-right text. The solution was a generic container that could carry semantic attributes like LANG (language) and BIDI (bi-directional, for bi-directional text). This proposed element was named &lt;SPAN&gt;.
+					While the www-style listserv discussed naming conventions and semantics, a different development in HTML was in the works. Because HTML was largely developed by speakers of English or other languages read left-to-right, writing right-to-left languages in HTML was tricky, especially if this right-to-left language appeared on the same page as left-to-right text. The solution was a generic container that could carry semantic attributes like "lang" (language) and "bidi" (bi-directional, for bi-directional text). This proposed element was named &lt;span&gt;.
 				</p>
 				<p>
-					&lt;SPAN&gt;'s first official appearance is in the September 1995 working draft of <i>Internationalization of the Hypertext Markup Language</i>. In December 1995, Michael J. Hannah suggested to the html-wg and www-style listservs that the new HTML element &lt;C&gt; be replaced by &lt;SPAN&gt;, which was already defined by the working drafts on internationalization. This suggestion was part of a larger move replacing the &lt;STYLE&gt; element with a stylesheet-friendly STYLE attribute that could be attached to any element. Thus the &lt;span&gt; we know today was the secondary result of an overshadowing change that shaped HTML and CSS's relationship from that point forward.
+					&lt;span&gt;'s first official appearance is in the September 1995 working draft of <i>Internationalization of the Hypertext Markup Language</i>. In December 1995, Michael J. Hannah suggested to the html-wg and www-style listservs that the new HTML element &lt;c&gt; be replaced by &lt;span&gt;, which was already defined by the working drafts on internationalization. This suggestion was part of a larger move replacing the &lt;style&gt; element with a stylesheet-friendly "style" attribute that could be attached to any element. Thus the &lt;span&gt; we know today was the secondary result of an overshadowing change that shaped HTML and CSS's relationship from that point forward.
 				</p>
-				<h3>Social & political culture of HTML</h3>	
+				<h3>Culture of HTML Development</h3>	
 				<p>
-					Here in the listservs, the social structure of HTML development becomes clearer. According to the <cite><a href="http://www.w3.org/Mail/" target="_blank">W3C website</a></cite>:
+					Here in the listservs, the cultural knowledge of the HTML development community becomes clearer. According to the <cite><a href="http://www.w3.org/Mail/" target="_blank">W3C website</a></cite>:
 				</p>
 
 				<blockquote>
