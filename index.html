@@ -82,7 +82,7 @@
 				
 				<h2 class="content-subhead" id="what">&lt;span&gt; what?</h2>
 				<blockquote>
-					The HTML <dfn>&lt;span&gt;</dfn> element is a generic inline container for phrasing content, which does not inherently represent anything.<br><cite><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span">The Mozilla Developer Network</a></cite>
+					The HTML <dfn>&lt;span&gt;</dfn> element is a generic inline container for phrasing content, which does not inherently represent anything.<br><cite><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span" target="_blank">The Mozilla Developer Network</a></cite>
 				</blockquote>
 				<p></p>
 				<p>
@@ -114,23 +114,23 @@
 				</p>
 				<h3>The missing container</h3>
 				<p>
-					The generic block-level &lt;div&gt; container was introduced in the HTML 3.0 proposal in March of 1995. The introduction of this novel generic container set the stage for an inline equivalent. In May of 1995, Alex Hopmann, founder of a software company later acquired by Microsoft, mentioned in <cite><a href="http://ksi.cpsc.ucalgary.ca/archives/HTML-WG/html-wg-95q2.messages/0508.html">a reply</a></cite> to the HTML Working Group listserv that he was working on a proposal for character-level—also known as inline—formatting. In this proposal, Hopmann outlined the need for a character-level container that could be used to apply text styles at the character level, instead of by sections, as seen with &lt;div&gt;. Hopmann called this character-level container &lt;C&gt;. At this time, some specific inline elements for common text styles had already been introduced. Text stylings such as bold or italicized text, common in print media, warranted their own elements that easily applied this styling to inline. However, unique text styling at the character level required more acrobatics. A generic inline container like Hopmann's proposed &lt;C&gt; would allow authors to easily add unique styling to words, phrases, and sentences.
+					The generic block-level &lt;div&gt; container was introduced in the HTML 3.0 proposal in March of 1995. The introduction of this novel generic container set the stage for an inline equivalent. In May of 1995, Alex Hopmann, founder of a software company later acquired by Microsoft, mentioned in <cite><a href="http://ksi.cpsc.ucalgary.ca/archives/HTML-WG/html-wg-95q2.messages/0508.html" target="_blank">a reply</a></cite> to the HTML Working Group listserv that he was working on a proposal for character-level—also known as inline—formatting. In this proposal, Hopmann outlined the need for a character-level container that could be used to apply text styles at the character level, instead of by sections, as seen with &lt;div&gt;. Hopmann called this character-level container &lt;C&gt;. At this time, some specific inline elements for common text styles had already been introduced. Text stylings such as bold or italicized text, common in print media, warranted their own elements that easily applied this styling to inline. However, unique text styling at the character level required more acrobatics. A generic inline container like Hopmann's proposed &lt;C&gt; would allow authors to easily add unique styling to words, phrases, and sentences.
 				</p>
 				<p>
-					Hopmann was not the only working group member to propose a generic inline container. On July 3, 1995, Benjamin C.W. Sittler proposed the &lt;TEXT&gt; element to the www-style working group. Like Hopmann, Sittler considered a generic character-level element <q cite="http://lists.w3.org/Archives/Public/www-style/1995Jul/0003.html">extremely useful for applying styles to certain blocks of text.</q> The first person to respond was Håkon Wium Lie...the man who <cite><a href="http://www.w3.org/People/howcome/p/cascade.html">first proposed Cascading Style Sheets (CSS)</a> the year before.</cite> Lie called the proposed generic inline container <q cite="http://lists.w3.org/Archives/Public/www-style/1995Jul/0009.html">very useful indeed,</q> and said he would talk with Dave Raggett, another major player in W3C, about the idea. Hopmann quickly jumped into the discussion, noting to the working group that his element, &lt;C&gt;, had been proposed first.
+					Hopmann was not the only working group member to propose a generic inline container. On July 3, 1995, Benjamin C.W. Sittler proposed the &lt;TEXT&gt; element to the www-style working group. Like Hopmann, Sittler considered a generic character-level element <q cite="http://lists.w3.org/Archives/Public/www-style/1995Jul/0003.html">extremely useful for applying styles to certain blocks of text.</q> The first person to respond was Håkon Wium Lie...the man who <cite><a href="http://www.w3.org/People/howcome/p/cascade.html" target="_blank">first proposed Cascading Style Sheets (CSS)</a> the year before.</cite> Lie called the proposed generic inline container <q cite="http://lists.w3.org/Archives/Public/www-style/1995Jul/0009.html">very useful indeed,</q> and said he would talk with Dave Raggett, another major player in W3C, about the idea. Hopmann quickly jumped into the discussion, noting to the working group that his element, &lt;C&gt;, had been proposed first.
 				</p>
 				<p>
-					The replies to Sittler and Hopmann's exchange reflect an awareness of the end user, particularly this user's interpretation of an element titled &lt;TEXT&gt; compared to an element titled &lt;C&gt;, &lt;FONT&gt;, or &lt;MARK&gt;. The considerations of the end user also sparked a reflection on the desired relationship between semantics and presentation. However, each new entrant to the conversation seemed insistent on tossing another potential name into the hat—or dismissing the idea of semantically neutral elements entirely. Paul Prescod scoffed at the wisdom of equipping users with neutral tags so, <q cite="">incredibly, horrifically easy to abuse when you dont' [sic] feel like looking up a tag in the HTML Spec.</q> Prescod's concerns were rebutted by Michal Young, who argued:
+					The replies to Sittler and Hopmann's exchange reflect an awareness of the end user, particularly this user's interpretation of an element titled &lt;TEXT&gt; compared to an element titled &lt;C&gt;, &lt;FONT&gt;, or &lt;MARK&gt;. The considerations of the end user also sparked a reflection on the desired relationship between semantics and presentation. However, each new entrant to the conversation seemed insistent on tossing another potential name into the hat—or dismissing the idea of semantically neutral elements entirely. Paul Prescod scoffed at the wisdom of equipping users with neutral tags so, <q cite="https://lists.w3.org/Archives/Public/www-style/1995Jul/0014.html">incredibly, horrifically easy to abuse when you dont' [sic] feel like looking up a tag in the HTML Spec.</q> Prescod's concerns were rebutted by Michal Young, who argued:
 				</p>
 
 				<blockquote>
-					You can't make html idiot-proof, because idiots are just too clever. If semantically meaningless tags are rigorously excluded from html, some idiots will misuse semantically meaningful tags to obtain formatting effects...A better (but difficult) objective is to encourage separation of presentation from semantics.<br><cite><a href="https://lists.w3.org/Archives/Public/www-style/1995Jul/0018.html">Michal Young, www-style@w3.org listserv, July 1995</a></cite>
+					You can't make html idiot-proof, because idiots are just too clever. If semantically meaningless tags are rigorously excluded from html, some idiots will misuse semantically meaningful tags to obtain formatting effects...A better (but difficult) objective is to encourage separation of presentation from semantics.<br><cite><a href="https://lists.w3.org/Archives/Public/www-style/1995Jul/0018.html" target="_blank">Michal Young, www-style@w3.org listserv, July 1995</a></cite>
 				</blockquote>
 				<p>
 					Michal sees two steps to separating presentation from semantics: making stylesheets powerful enough to create results too complex to mimic using improper HTML, and making these same stylesheets so easy to use that people aren't tempted to misuse HTML instead.
 				</p>
 				<p>
-					After much conversation and little consensus, the reaction to Sittler's email petered out. Despite the disagreements in response to Sittler and Hopmann's proposals, the &lt;C&gt; element came out on top in the short term. &lt;C&gt; was added to the <cite>first draft of <i>HTML and Style Sheets</i></cite> <a href="http://tools.ietf.org/html/draft-ietf-html-style-00">(November 1995)</a> as the new generic inline container. But &lt;C&gt; wasn't around for long...
+					After much conversation and little consensus, the reaction to Sittler's email petered out. Despite the disagreements in response to Sittler and Hopmann's proposals, the &lt;C&gt; element came out on top in the short term. &lt;C&gt; was added to the <cite>first draft of <i>HTML and Style Sheets</i></cite> (<a href="http://tools.ietf.org/html/draft-ietf-html-style-00" target="_blank">November 1995</a>) as the new generic inline container. But &lt;C&gt; wasn't around for long...
 				</p>
 				<h3>Internationalization</h3>
 				<p>
@@ -141,10 +141,10 @@
 				</p>
 				<h3>Social & political culture of HTML</h3>	
 				<p>
-					Here in the listservs, the social structure of HTML development becomes clearer. According to the W3C website:
+					Here in the listservs, the social structure of HTML development becomes clearer. According to the <cite="http://www.w3.org/Mail/">W3C website</cite>:
 				</p>
 
-				<blockquote cite="http://www.w3.org/Mail/">
+				<blockquote>
 					W3C hosts hundreds of mailing lists and archives, many of them public, for the benefit of the Web community at large. By providing this service, we hope to foster a highly responsive and interactive community for creating new ideas and advancing web technologies and culture.
 				</blockquote>
 
@@ -154,7 +154,7 @@
 				
 				<h2 class="content-subhead" id="use">Using &lt;span&gt;</h2>
 				<p>
-					The correct guidelines for using &lt;span&gt; today can be found in the <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-span-element">WHATWG HTML Living Standard.</a> In some of its online articles, <i>The Atlantic</i> is an example of the approved use of &lt;span&gt;. Indeed, <i>The Atlantic</i> uses &lt;span&gt; essentially as Hopmann and Sittler intended: to apply style to a small section of text.
+					The correct guidelines for using &lt;span&gt; today can be found in the <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-span-element" target="_blank">WHATWG HTML Living Standard.</a> In some of its online articles, <i>The Atlantic</i> is an example of the approved use of &lt;span&gt;. Indeed, <i>The Atlantic</i> uses &lt;span&gt; essentially as Hopmann and Sittler intended: to apply style to a small section of text.
 				</p>
 						
 				<img class="pure-img" src="assets/img/article.jpg" alt="<i>The Atlantic</i>'s article 'The Coddling of the American Mind" />
@@ -184,8 +184,8 @@
 				<p>
 					While new elements have somewhat reduced the use of &lt;span&gt;, it is unlikely that every inline semantic grouping will gain a new element. When referring to &lt;span&gt;'s block-level counterpart, &lt;div&gt;, Mike Robinson states:
 				</p>
-				<blockquote cite="http://html5doctor.com/you-can-still-use-div/">
-					You will certainly use &lt;div&gt; less often in HTML5 than you did in HTML 4, but it’s still a valuable element to have in your toolkit. Sure, it’ll be picked last for the team because everyone else is better, but it’ll be the best damn generic container element there is!
+				<blockquote>
+					You will certainly use &lt;div&gt; less often in HTML5 than you did in HTML 4, but it’s still a valuable element to have in your toolkit. Sure, it’ll be picked last for the team because everyone else is better, but it’ll be the best damn generic container element there is!<br><cite="http://html5doctor.com/you-can-still-use-div/">Mike Robinson, "You can still use div," July 2010</cite>
 				</blockquote>
 				<p>
 					Unless something radically changes the development of HTML, &lt;span&gt; will never disappear entirely. Instead, this handy element will help web developers write semantically correct code, and help the HTML development community determine where adjustments should be made to create a richer HTML language.
