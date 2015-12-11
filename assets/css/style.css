@@ -9,7 +9,7 @@
 		}
 		
 		a:visited {
-			color: #1F8DD6;
+			color: #cc6600;
 		}
 		
 		/* Quote styling based off of http://www.webmaster-source.com/2012/04/24/pure-css-blockquote-styling/ */
@@ -33,7 +33,7 @@
 			position: absolute;
 			left: -20px;
 			top: -20px;
-			color: #7a7a7a;
+			color: #1F8DD6;
 		}
 
 		blockquote cite {
@@ -124,7 +124,7 @@
 		.content-subhead {
 			margin: 50px 0 20px 0;
 			font-weight: 300;
-			color: #888;
+			color: #1F8DD6;
 		}
 
 
