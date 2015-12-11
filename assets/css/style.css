@@ -47,6 +47,10 @@
 			content: "\2014 \2009";
 		}
 
+		cite {
+			font-style: normal;
+			}
+
 		.pure-img-responsive {
 			max-width: 100%;
 			height: auto;
