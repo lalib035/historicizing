@@ -76,7 +76,7 @@
 					Today’s web design seems to change at a moment’s notice. Suddenly, one-page websites <a href="https://wordpress.com/" target="_blank">are</a> <a href="http://everylastdrop.co.uk/" target="_blank">in</a>, and <a href="http://new.artsmia.org/" target="_blank">every</a> <a href="http://www.oakley.com/" target="_blank">other</a> <a href="https://webflow.com/" target="_blank">organization</a> has a widescreen image taking up prime homepage real estate. Behind the scenes, in the murky world of web standards and development, the building blocks of the internet are slowly changing, too. In 2014, the governing body of HTML, the internet’s primary coding language, officially released the fifth version of its language: HTML5. The last major HTML release, HTML 4.0, was introduced seventeen years earlier, and HTML5’s introduction brought in long-awaited tools for developers to use, and new and more refined ways to manipulate content made for the web.
 				</p>
 				<p>
-					But among the glamour shots of new HTML5 features, a member of the old guard still stands strong: &lt;span&gt;. The HTML development community's decision to create &lt;span&gt; shaped the future of the HTML language in no one simple way.In the evolving technology of HTML, &lt;span&gt; is the ancestor of many now-standard HTML elements, the transitional step between future elements and their conception, and the back-up when simply nothing else will do.
+					But among the glamour shots of new HTML5 features, a member of the old guard still stands strong: &lt;span&gt;. The HTML development community's decision to create &lt;span&gt;, and the very existence of a generic container such as &lt;span&gt;, shaped the future of the HTML language in no one simple way. In the evolving technology of HTML, &lt;span&gt; is the ancestor of many now-standard HTML elements, the transitional step between future elements and their conception, and the back-up when simply nothing else will do.
 				</p>
 				
 				<h2 class="content-subhead" id="perspective">Some perspective</h2>
@@ -133,10 +133,10 @@
 				</p>
 				<h3>The missing container</h3>
 				<p>
-					The generic block-level &lt;div&gt; container was introduced in the HTML 3.0 proposal in March of 1995. The introduction of this novel generic container set the stage for an inline equivalent. In May of 1995, Alex Hopmann, founder of a software company later acquired by Microsoft, mentioned in <cite><a href="http://ksi.cpsc.ucalgary.ca/archives/HTML-WG/html-wg-95q2.messages/0508.html" target="_blank">a reply</a></cite> to the HTML Working Group listserv that he was working on a proposal for character-level—also known as inline—formatting. In this proposal, Hopmann outlined the need for a character-level container that could be used to apply text styles at the character level, instead of by sections, as seen with &lt;div&gt;. Hopmann called this character-level container &lt;c&gt;. At this time, some specific inline elements for common text styles had already been introduced. Text stylings such as bold or italicized text, common in print media, warranted their own elements that easily applied this styling to inline. However, unique text styling at the character level required more acrobatics. A generic inline container like Hopmann's proposed &lt;c&gt; would allow authors to easily add unique styling to words, phrases, and sentences.
+					The generic block-level &lt;div&gt; container was introduced in the HTML 3.0 proposal in March of 1995. The introduction of this novel generic container set the stage for an inline equivalent. In May of 1995, Alex Hopmann, founder of a software company later acquired by Microsoft, mentioned in <cite><a href="http://ksi.cpsc.ucalgary.ca/archives/HTML-WG/html-wg-95q2.messages/0508.html" target="_blank">a reply</a></cite> to the HTML Working Group listserv that he was working on a proposal for character-level—also known as inline—formatting. In this proposal, Hopmann outlined the need for a character-level container that could be used to apply text styles at the character level, instead of by sections, as seen with &lt;div&gt;. Hopmann called this character-level container &lt;c&gt;. At this time, some specific inline elements for common text styles had already been introduced. Text stylings such as bold or italicized text, common in print media, warranted their own elements that easily applied this styling to inline. However, unique text styling at the character level required more acrobatics. A generic inline container like Hopmann's proposed &lt;c&gt; would allow authors to easily add unique and complex styling to words, phrases, and sentences through integration with "stylesheets" written in languages like Cascading Style Sheets, or CSS.
 				</p>
 				<p>
-					Hopmann was not the only working group member to propose a generic inline container. On July 3, 1995, Benjamin C.W. Sittler proposed the &lt;text&gt; element to the www-style working group. Like Hopmann, Sittler considered a generic character-level element <q cite="http://lists.w3.org/Archives/Public/www-style/1995Jul/0003.html">extremely useful for applying styles to certain blocks of text.</q> The first person to respond was Håkon Wium Lie...the man who <cite><a href="http://www.w3.org/People/howcome/p/cascade.html" target="_blank">first proposed Cascading Style Sheets (CSS)</a> the year before.</cite> Lie called the proposed generic inline container <q cite="http://lists.w3.org/Archives/Public/www-style/1995Jul/0009.html">very useful indeed,</q> and said he would talk with Dave Raggett, another major player in W3C, about the idea. Hopmann quickly jumped into the discussion, noting to the working group that his element, &lt;c&gt;, had been proposed first.
+					Hopmann was not the only working group member to propose a generic inline container. On July 3, 1995, Benjamin C.W. Sittler proposed the &lt;text&gt; element to the www-style working group. Like Hopmann, Sittler considered a generic character-level element <q cite="http://lists.w3.org/Archives/Public/www-style/1995Jul/0003.html">extremely useful for applying styles to certain blocks of text.</q> The first person to respond was Håkon Wium Lie...the man who <cite><a href="http://www.w3.org/People/howcome/p/cascade.html" target="_blank">first proposed CSS</a> the year before.</cite> Lie called the proposed generic inline container <q cite="http://lists.w3.org/Archives/Public/www-style/1995Jul/0009.html">very useful indeed,</q> and said he would talk with Dave Raggett, another major player in W3C, about the idea. Hopmann quickly jumped into the discussion, noting to the working group that his element, &lt;c&gt;, had been proposed first.
 				</p>
 				<p>
 					The replies to Sittler and Hopmann's exchange reflect an awareness of the end user, particularly this user's interpretation of an element titled &lt;text&gt; compared to an element titled &lt;c&gt;, &lt;font&gt;, or &lt;mark&gt;. The considerations of the end user also sparked a reflection on the desired relationship between semantics and presentation. However, each new entrant to the conversation seemed insistent on tossing another potential name into the hat—or dismissing the idea of semantically neutral elements entirely. Paul Prescod scoffed at the wisdom of equipping users with neutral tags so, <q cite="https://lists.w3.org/Archives/Public/www-style/1995Jul/0014.html">incredibly, horrifically easy to abuse when you dont' [sic] feel like looking up a tag in the HTML Spec.</q> Prescod's concerns were rebutted by Michal Young, who argued:
@@ -168,12 +168,15 @@
 				</blockquote>
 
 				<p>
-					As the interactions between Hopmann, Sittler, Lie, and the other listserv members illustrate, in many cases, web developers had the opportunity to ask questions and propose ideas directly to other developers and people involved in the primary governing body of HTML. W3C's purported focus on responsiveness and interaction clearly helped lead to the public discussion of and action on the issue of a generic inline container. The developers' focus on ease-of-use and efficiency lead to the consolidation of two solutions into a single element.
+					As the interactions between Hopmann, Sittler, Lie, and the other listserv members illustrate, in many cases, web developers had the opportunity to ask questions and propose ideas directly to other developers and people involved in the primary governing body of HTML. W3C's purported focus on responsiveness and interaction clearly helped lead to the public discussion of and action on the issue of a generic inline container. The developers' focus on ease-of-use and efficiency also lead to the consolidation of two solutions into a single element—an example of non-linear and non-simple replacement development at work.
 				</p>
 				
 				<h2 class="content-subhead" id="use">Using &lt;span&gt;</h2>
 				<p>
-					The correct guidelines for using &lt;span&gt; today can be found in the <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-span-element" target="_blank">WHATWG HTML Living Standard.</a> In some of its online articles, <i>The Atlantic</i> is an example of the approved use of &lt;span&gt;. Indeed, <i>The Atlantic</i> uses &lt;span&gt; essentially as Hopmann and Sittler intended: to apply style to a small section of text.
+					The correct guidelines for using &lt;span&gt; today can be found in the <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-span-element" target="_blank">WHATWG HTML Living Standard.</a> The meaning of this standard is clarified by the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span">Mozilla Developer Network page on &lt;span&gt;</a>. Essentially, the standard states that &lt;span&gt; should only be used when no other element better fits the purpose. In this way, &lt;span&gt;'s purpose has remained fairly constant throughout its lifetime—HTML writers and developers use &lt;span&gt; for a number of purposes that no semantic inline element exists to fill. As Michal Young referenced in the www-style listserv, it is better to use &lt;span&gt; for a novel element than to misuse an element with a specific purpose. When W3C or the HTML listserv identifies a particularly popular use for &lt;span&gt; (such as one of its original purposes, designating bi-directional text) they may choose to introduce a new inline element that fulfills this purpose (like &lt;bidi&gt;). 
+				</p>
+				<p>
+					In some of its online articles, <i>The Atlantic</i> has examples of the approved use of &lt;span&gt;. Indeed, <i>The Atlantic</i> uses &lt;span&gt; essentially as Hopmann and Sittler intended: to apply style to a small section of text.
 				</p>
 						
 				<img class="pure-img" src="assets/img/article.jpg" alt="<i>The Atlantic</i>'s article 'The Coddling of the American Mind" />
@@ -182,32 +185,54 @@
 					In this article, <i>The Atlantic</i> has used &lt;span&gt; to style the first letter of the article in a different font and the first two words in small caps.
 				</p>
 				
-				<img class="pure-img" src="assets/img/article_code.png" alt="<i>The Atlantic</i>'s &lt;span&gt; code." />
+				<pre><code>&lt;span class="smallcaps"&gt;<br>	&lt;b&gt;S&lt;/b&gt;<br>	omething strange is<br>&lt;/span&gt;</code></pre>
 				
 				<p>
-					However, &lt;span&gt; can also produce unexpected results. For example, when copying and pasting text from a webpage or document with added formatting, the style of the original document may be copied alongside the text. In some cases, this is the result of the &lt;span&gt; element including attributes such as line spacing, font, and text size. This accidental addition of &lt;span&gt; may affect text presentation in the new document.
+					However, &lt;span&gt; can also produce unexpected results. For example, when copying and pasting text from a webpage or document with added formatting, the style of the original document may be copied alongside the text. In some cases, this is the result of the &lt;span&gt; element including attributes such as line spacing, font, and text size. This accidental application of &lt;span&gt; may affect text presentation in the new document.
 				</p>
 				
-<!-- Insert image from work (loose spans with style attributes)-->
+				<pre><code>&lt;span style="font-family: inherit; font-size: 1rem; line-height: 1.4rem;"&gt;International political issues can be complicated to relay because they are often tied up in multiple groups’ culture and history. Professor Beeman has used anthropology to contextualize many topics over the years, but most recently he has been able to draw from his knowledge of US-Iran relations to explain the real issues behind the Joint Comprehensive Plan of Action, otherwise known as “The Iran Deal.”&lt;/span&gt;</code></pre>
 				
 				<p>
 					To prevent this transfer of styling, users have the option to "Paste as Plain Text," which should remove any &lt;span&gt; tags with additional styling.
 				</p>
+				
+				<p>
+					&lt;span&gt; can also be used wrong intentionally. In the blog post <cite><a href="http://www.karlgroves.com/2013/05/14/links-are-not-buttons-neither-are-divs-and-spans/">"Links are not buttons. Neither are DIVs and SPANs,"</a></cite> Karl Groves, a web accessibility consultant, rails against the use of &lt;span&gt;s for button-like applications. Groves's angst stems from the established existence of an element for buttons: &lt;button&gt;. As a web accessibility consultant, Groves is largely concerned with this misuse because of how it affects populations who must rely on semantics, not presentation, to browse the web. One such population is blind people.
+				</p>
+				
+				<img class="pure-img" src="assets/img/pseudobutton.png" alt="Image of an apparent 'button'" />
 
-<!-- I'm considering additional examples of non-standard span use. Probably insert the "button" span use here.-->
+				<p>
+					Images like the above can be readily identified as interactive buttons by sighted people. However, it's not so easy for people navigating blind if the "button" was created using elements like &lt;span&gt;, &lt;a&gt;, or &lt;div&gt; instead of &lt;button&gt;. According to Groves, the semantic meaning of the &lt;button&gt; element considers accessibility in three ways. Buttons made using the &lt;button&gt; element:
+				</p>
+				
+				<ul>
+					<li>Are device-independent (can be activated using keyboard, voice command, or mouse)</li>
+					<li>Have or can have good color contrast</li>
+					<li>Identify themselves to accessibility software using attributes like name, state, role, and value</li>
+				</ul>
+				
+				<p>
+				Buttons made using &lt;span&gt;, however, have none of the above considerations. Websites may use non-standard elements like &lt;span&gt; to create buttons, despite the downsides, for a number of reasons—the website may predate the &lt;button&gt;, the author's knowledge, preference, or comfort level may predate the &lt;button&gt;, or the author may have <cite><a href="http://www.peterbe.com/plog/button-tag-in-IE">feared compatibility issues with older browsers.</a></cite>
+				</p>
+				
+				<p>
+					The &lt;button&gt; element is an example of the evolution in HTML that occurred because a generic element like &lt;span&gt; existed. Once again, the evolution of &lt;span&gt; defies a simple replacement model, as the abilities of the &lt;button&gt; element cannot completely replace &lt;span&gt;, but instead flesh out features originally created using your friendly generic container. &lt;span&gt;'s evolution into further elements also subverts the idea of linear technological evolution: no one element can replace &lt;span&gt;, and no single element came before &lt;span&gt;.
+				</p>
 
 				<h2 class="content-subhead" id="today">&lt;span&gt; today</h2>
 				<p>
-					Since &lt;span&gt; was first added to the September 1997 HTML 4 Working Draft, and officially published in the 1999 publication of HTML 4.01, a number of new inline elements have been added to the HTML tool bag. Many of these elements were created as a result of trends in &lt;span&gt; use, where the semantic meaning of the &lt;span&gt; element was popular enough to warrant a unique semantic element. For example, part of &lt;span&gt;'s origin was the need for a way to group bidirectional text. HTML5 introduced a new inline element that does exactly that: &lt;bidi&gt;. As a result of its generic status, &lt;span&gt; has helped HTML grow as a markup language.
+					Since &lt;span&gt; was first added to the September 1997 HTML 4 Working Draft, and officially published in the 1999 publication of HTML 4.01, a number of new inline elements have been added to the HTML tool bag. Many of these elements were created as a result of trends in &lt;span&gt; use, where the semantic meaning of the &lt;span&gt; element was popular enough to warrant a unique semantic element. For example, part of &lt;span&gt;'s origin was the need for a way to group bidirectional text. HTML5 introduced a new inline element that does exactly that: &lt;bdi&gt;. As a result of its generic status, &lt;span&gt; has helped HTML grow as a markup language.
 				</p>
 				<p>
-					While new elements have somewhat reduced the use of &lt;span&gt;, it is unlikely that every inline semantic grouping will gain a new element. When referring to &lt;span&gt;'s block-level counterpart, &lt;div&gt;, Mike Robinson states:
+					While new elements have somewhat reduced the use of &lt;span&gt;, it is unlikely that every inline semantic grouping will gain a new element. When referring to the affects of new HTML5 elements on &lt;span&gt;'s block-level counterpart, &lt;div&gt;, Mike Robinson states:
 				</p>
 				<blockquote>
 					You will certainly use &lt;div&gt; less often in HTML5 than you did in HTML 4, but it’s still a valuable element to have in your toolkit. Sure, it’ll be picked last for the team because everyone else is better, but it’ll be the best damn generic container element there is!<br><cite>Mike Robinson, <a href="http://html5doctor.com/you-can-still-use-div/" target=_blank>"You can still use div,"</a> July 2010</cite>
 				</blockquote>
 				<p>
-					Unless something radically changes the development of HTML, &lt;span&gt; will never disappear entirely. Instead, this handy element will help web developers write semantically correct code, and help the HTML development community determine where adjustments should be made to create a richer HTML language.
+					Unless something radically changes the development of HTML, there will never be a simple replacement of &lt;span&gt;. Though its past may not be simple, &lt;span&gt;'s future is clear. This handy element will help web developers write semantically correct code and help the HTML development community determine where adjustments should be made to create a richer HTML language.
 				</p>
 				<h2 class="content-subhead" id="references">References</h2>
 				<p>
